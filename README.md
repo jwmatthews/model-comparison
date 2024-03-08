@@ -2,7 +2,7 @@
 
 This repo is intended provide a simplified and more rapid way of producing results from various models for comparison than the notebooks at https://github.com/konveyor-ecosystem/kai/blob/main/notebooks
 
-To see hpw the given prompt was assembled and what data went into it you can view the associated notebook.
+To see how the given prompt was assembled and what data went into it you can view the associated notebook.
 
 ## Usage
 - Set up the python environment
@@ -10,7 +10,12 @@ To see hpw the given prompt was assembled and what data went into it you can vie
 python3 -m venv env
 source env/bin/activate
 pip install -r ./requirements.txt
+
+## MacOS may show an error above with building 'multidict' package
+## Workaround is:  `MULTIDICT_NO_EXTENSIONS=1 pip3 install -r ./requirements.txt`
 ```
+
+   
 
 - To run OpenAI models:
 ```
